@@ -3,7 +3,6 @@
 #include <unistd.h>
 #include "conio.h"
 
-
 void ft_putchar(char c)
 {
     write(1, &c, 1);
@@ -111,7 +110,6 @@ int main(int ac, char **str)
     {0,0,0,0,0,0,0,0,0,0},
 
 };
-    //make_tab(grille);
     while (grille[9][9] == 0)
     {
       make_tab(grille);
@@ -119,32 +117,6 @@ int main(int ac, char **str)
       mover(move, grille, &x, &y);
       system("clear");
     }
-
-
-
-    // system("clear");
-    // modify_tab(grille, 0, 2);
-    // make_tab(grille);
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // make_tab(grille);
-  // printf("\n");
-  // modify_tab(grille, 0, 2);
-  // analysis(grille, x);
-  // printf("%d\n", x->x);
-  // printf("%d\n", x->y);
-  // make_tab(grille);
 
   return(0);
 }
